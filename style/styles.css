@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+/* elementos base */
+
 body{
    background: var(--preta);
    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -24,20 +26,73 @@ header .container{
 }
 
 header .logo{
-    margin-left: 5px;
+    margin: 8px 20px;
     color: var(--vermelho);
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-size:40px;
-    
+    font-size: 40px;
 }
 
 header nav a{
     text-decoration:none;
-    color:#AAA;
+    color:#fff;
     margin-right: 10px;
+    transition: .1s ease all;
 }
 
 header nav a:hover{
-    color:#fff;
+    color:#aaa;
 }
 
+/* filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-peaky.jpg');
+    height: 550px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    width: 55%;
+}
+
+.titulo {
+    font-size: 40px;
+}
+
+.botao{
+    background: rgba(170,170,170,50%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(170,170,170,35%);
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.filme-principal .container,.botoes{
+    margin-left: 35px;
+}
+
+.box-filme {
+    height: 60%;
+    width: 60%;
+    display: block;
+}
